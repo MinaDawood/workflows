@@ -7,5 +7,9 @@
     "type": "git",
     "url": "?.git"
   },
-  "author": "Mina Dawood"
+  "author": "Mina Dawood",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8"
+  }
 }
