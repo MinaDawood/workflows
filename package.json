@@ -1,0 +1,11 @@
+{
+  "name": "workflows",
+  "version": "0.0.1",
+  "description": "Test Project for using NPM and Gulp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Mina Dawood"
+}
