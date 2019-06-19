@@ -34,15 +34,21 @@ gulp.task('js', function(done) {
 
 gulp.task('compass', function(done) {
    gulp.src(sassSources) 
-    .pipe(compass( {
+    .pipe(compass({
        sass: 'components/sass',
        image: 'builds/development/images',
        style: 'expanded'
-   }))
-    .on('error', gutil.log)
+   })
+    .on('error', gutil.log))
     .pipe(gulp.dest('builds/development/css'))
     done();
 });
 
+
+gulp.task('watch', function() {
+  gulp.watch(coffeeSources, gulp.series('coffee'));
+  gulp.watch(jsSources, gulp.series('js'));
+  gulp.watch('components/sass/*.scss', gulp.series('compass'));
+});
 
 gulp.task('default', gulp.series('coffee', 'js', 'compass'))
