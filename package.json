@@ -5,11 +5,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/MinaDawood/workflows.git"
   },
   "author": "Mina Dawood",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-coffee": "^3.0.3",
     "gulp-util": "^3.0.8"
   }
 }
